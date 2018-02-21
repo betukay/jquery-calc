@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #ffffff;
+  color: #
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+  text-rendering: optimizeLegibility;
+}
+
+/*--------------------------------*/
+/* Nav Bar */
+/*--------------------------------*/
+
+nav * {
+  display: inline-block;
+  padding: 1%;
+}
+
+nav {
+  background-color: #505050;
+  border-bottom:
+  margin-bottom: 1%;
+}
+
+/*--------Back Button------------*/
+
+.back a {
+  background-color: #ffa500;
+  border-radius: 10px;
+  color: #ffffff;
+  position: relative;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.back a:hover {
+  background-color: #f09b00;
+  transform: translateY(2px);
+}

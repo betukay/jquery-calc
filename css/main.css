@@ -1,14 +1,22 @@
+
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 html {
-  background-color: #ffffff;
-  color: #
+  background-color: #eee2dc;
   font-size: 18px;
   font-family: 'Comfortaa', cursive;
   text-rendering: optimizeLegibility;
+}
+
+.main {
+  background-color: inherit;
+  height: 100%;
+  width: auto;
 }
 
 /*--------------------------------*/
@@ -21,24 +29,126 @@ nav * {
 }
 
 nav {
-  background-color: #505050;
-  border-bottom:
-  margin-bottom: 1%;
+  background-color: #4d6d9a;
+  border-bottom: 12px double #eee2dc;
+}
+
+.logo {
+  box-sizing: content-box;
+  height: 50px;
+  margin-left: 0.5em;
 }
 
 /*--------Back Button------------*/
 
 .back a {
-  background-color: #ffa500;
+  background-color: #ffae1a;
   border-radius: 10px;
   color: #ffffff;
   position: relative;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
+  top: -1.6em;
 }
 
 .back a:hover {
-  background-color: #f09b00;
+  background-color: #d19019 ;
   transform: translateY(2px);
+}
+
+.back a:active {
+  background-color: #a36900 ;
+  transform: translateY(4px);
+}
+
+/*--------------------------------*/
+/* Calculator */
+/*--------------------------------*/
+
+.calc {
+  background-color: #4d79ff;
+  border-radius: 10px;
+  height: 400px;
+  margin: 3em auto auto auto;
+  padding: 1%;
+  width: 350px;
+}
+
+.calc  {
+  text-align: center;
+}
+
+.calc .calc-screen {
+  text-align: left;
+}
+
+ .calc-screen span  {
+  margin-top: 10px;
+}
+
+.calc-screen {
+  background-color: #e6e6e6;
+  border-box: 3px solid #404040;
+  border-radius: 8px;
+  font-family: 'Quantico', sans-serif;
+  font-size: 1.4em;
+  margin:  0 auto;
+  padding: 2%;
+  width: 70%;
+}
+
+hr {
+  margin: 8% auto 6% auto;
+
+}
+
+a.btn {
+  text-align: center;
+  vertical-align: central;
+}
+
+.btn {
+  background-color: #cccccc;
+  border-radius: 10px;
+  border-bottom: 4px solid #808080;
+  color: #333333;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  height: 40px;
+  margin-top: 5%;
+  padding: 2%;
+  width: 20%;
+}
+
+.btn:hover {
+  border-bottom: 2px solid #404040;
+  background-color: #808080;
+}
+
+.btn:active {
+  border-top: none;
+  border-bottom: none;
+  background-color: #404040;
+}
+
+.long {
+  width: 42%
+}
+
+.red {
+  background-color: #ff3333;
+  border-bottom: 4px solid #b30000;
+  color: white;
+}
+
+.red:hover {
+  background-color: #b30000;
+  border-bottom: 2px solid #800000;
+}
+
+.red:active {
+  background-color: #800000;
+  border-bottom: none;
 }

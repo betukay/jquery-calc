@@ -2,7 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Javascript Calculator</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="author" content="Betu Kayembe">
+    <meta name="description" content="Betu Kayembe is an diligent Javascript
+    developer and intuitive thinker who can bring your ideas to web-based
+    fruition.">
+
+    <title>JS Calculator</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Quantico" rel="stylesheet">
     <link rel="icon" href="icons/favicon.ico">
@@ -11,42 +17,53 @@
     <nav>
             <img class="logo" src="icons/logo-betu-white.png" alt="logo">
           <div class="back">
-            <a href="#">&lt;&lt;Back</a>
+            <a href="#">&lt;&lt; Back</a>
           </div>
     </nav>
     <section class="main">
+      <div class="calc-title">
+        <h3>JS Calculator</h3>
+      </div>
       <div class="calc">
+        <form name="calculator">
+            <input  type="text" value="0" class="display "name="display" id="display" disabled>
+          <hr>
+            <!-- first button row -->
+            <input type="button" value="AC" class="btn red" id="deleteAll" onclick=”toDisplay('AC')”>
+            <input type="button" value="CE" class="btn red" id="deleteOne" onclick=”deleteOne('CE')”>
+            <input type="button" value="x^2" class="btn" id="/" onclick=”power('p')”>
+            <input type="button" value="/" class="btn" id="/" onclick=”toDisplay('/')”>
 
-        <div class="calc-screen">
-          <span id="">0</span>
-        </div>
-        <hr>
-          <a class="btn red" id="deleteAll">AC</a>
-          <a class="btn red" id="deleteOne">CE</a>
-          <a class="btn" id="/">/</a>
-          <a class="btn" id="*">*</a>
-          <a class="btn" id="7">7</a>
-          <a class="btn" id="8">8</a>
-          <a class="btn" id="9">9</a>
-          <a class="btn" id="-">-</a>
 
-          <a class="btn" id="4">4</a>
-          <a class="btn" id="5">5</a>
-          <a class="btn" id="6">6</a>
-          <a class="btn" id="+">+</a>
+            <!-- second button row -->
+            <input type="button" value="7" class="btn" id="7" onclick=”toDisplay('7')”>
+            <input type="button" value="8" class="btn" id="8" onclick=”toDisplay('8')”>
+            <input type="button" value="9" class="btn" id="9" onclick=”toDisplay('9')”>
+            <input type="button" value="x" class="btn" id="x" onclick=”toDisplay('x')”>
 
-          <a class="btn" id="3">3</a>
-          <a class="btn" id="2">2</a>
-          <a class="btn" id="1">1</a>
-          <a class="btn" id="-">-</a>
 
-          <a class="btn long" id="0">0</a>
-          <a class="btn long red" id="=">=</a>
-        </div>
+            <!-- third button row -->
+            <input type="button" value="4" class="btn" id="4" onclick=”toDisplay('4')”>
+            <input type="button" value="5" class="btn" id="5" onclick=”toDisplay('5')”>
+            <input type="button" value="6" class="btn" id="6" onclick=”toDisplay('6')”>
+            <input type="button" value="-" class="btn" id="-" onclick=”toDisplay('-')”>
+
+
+            <!-- fourth button row -->
+            <input type="button" value="3" class="btn" id="3" onclick=”toDisplay('3')”>
+            <input type="button" value="2" class="btn" id="2" onclick=”toDisplay('2')”>
+            <input type="button" value="1" class="btn" id="1" onclick=”toDisplay('1')”>
+            <input type="button" value="+" class="btn" id="+" onclick=”toDisplay('+')”>
+
+            <!-- fifth button row -->
+            <input type="button" value="0" class="btn" id="0" onclick=”toDisplay('0')”>
+            <input type="button" value="." class="btn" id="." onclick=”toDisplay('.')”>
+            <input type="button" value="=" class="btn long red" id="=" onclick=”toDisplay('=')”>
+          </div>
+        </form>
+
       </div>
     </section>
-
-
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

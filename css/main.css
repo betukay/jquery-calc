@@ -1,4 +1,6 @@
-
+/*--------------------------------*/
+/* Initial Setup */
+/*--------------------------------*/
 
 * {
   box-sizing: border-box;
@@ -7,14 +9,16 @@
 }
 
 html {
-  background-color: #eee2dc;
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   font-size: 18px;
   font-family: 'Comfortaa', cursive;
   text-rendering: optimizeLegibility;
 }
 
 .main {
-  background-color: inherit;
   height: 100%;
   width: auto;
 }
@@ -31,35 +35,53 @@ nav * {
 nav {
   background-color: #4d6d9a;
   border-bottom: 12px double #eee2dc;
+  height: 90px;
 }
 
 .logo {
   box-sizing: content-box;
-  height: 50px;
+  height: 40px;
+  width: 40px;
   margin-left: 0.5em;
+  margin-right: 0.5em;
+  margin-top: 0.4em;
 }
 
 /*--------Back Button------------*/
 
 .back a {
   background-color: #ffae1a;
+  border-bottom: 4px solid #d19019;
   border-radius: 10px;
   color: #ffffff;
-  position: relative;
   padding: 10px 25px;
+  position: absolute;
   text-align: center;
   text-decoration: none;
-  top: -1.6em;
+  top: 1em;
 }
 
 .back a:hover {
-  background-color: #d19019 ;
-  transform: translateY(2px);
+  border-bottom: 2px solid #a36900;
+  border-top: 2px solid #d19019;
+  background-color: #d19019;
 }
 
 .back a:active {
-  background-color: #a36900 ;
-  transform: translateY(4px);
+  border-bottom: none;
+  border-top: 2px solid #a36900;
+  background-color: #a36900;
+}
+
+.calc-title {
+  color: #26364d;
+  margin: 0 auto;
+  width: 348px;
+}
+
+h3 {
+  padding-top: 2em;
+  text-align: center;
 }
 
 /*--------------------------------*/
@@ -68,9 +90,11 @@ nav {
 
 .calc {
   background-color: #4d79ff;
+  border-bottom: 5px solid #2e4899;
+  border-left: 5px solid #2e4899;
   border-radius: 10px;
-  height: 400px;
-  margin: 3em auto auto auto;
+  height: 410px;
+  margin: 2em auto auto auto;
   padding: 1%;
   width: 350px;
 }
@@ -79,31 +103,26 @@ nav {
   text-align: center;
 }
 
-.calc .calc-screen {
-  text-align: left;
+.calc .display {
+  text-align: right;
 }
 
- .calc-screen span  {
-  margin-top: 10px;
-}
-
-.calc-screen {
+.display {
   background-color: #e6e6e6;
-  border-box: 3px solid #404040;
-  border-radius: 8px;
+  color: #333333;
   font-family: 'Quantico', sans-serif;
   font-size: 1.4em;
-  margin:  0 auto;
+  margin:  2% auto 0 auto;
   padding: 2%;
-  width: 70%;
+  width: 85%;
 }
 
 hr {
-  margin: 8% auto 6% auto;
+  margin: 6% auto 4% auto;
 
 }
 
-a.btn {
+input.btn {
   text-align: center;
   vertical-align: central;
 }
@@ -119,18 +138,48 @@ a.btn {
   height: 40px;
   margin-top: 5%;
   padding: 2%;
+  position: relative;
   width: 20%;
 }
 
 .btn:hover {
+  height: 38px;
   border-bottom: 2px solid #404040;
   background-color: #808080;
+  transform: translateY(2px);
 }
 
 .btn:active {
-  border-top: none;
-  border-bottom: none;
+  height: 36px;
+  border-bottom: 4px solid #404040;
   background-color: #404040;
+}
+
+input {
+  font-family: 'Comfortaa', cursive;
+  font-size: inherit;
+}
+
+#display,
+#display:hover,
+#display:focus,
+#display:active {
+  border: 3px solid #004080;
+  border-radius: 8px;
+  outline: 0;
+}
+
+input,
+input:hover,
+input:focus,
+input:active {
+  outline: 0;
+  border: 0;
+}
+
+input:visited {
+  height: 20px;
+  background-color: yellow;
 }
 
 .long {
@@ -144,11 +193,14 @@ a.btn {
 }
 
 .red:hover {
+  height: 38px;
   background-color: #b30000;
   border-bottom: 2px solid #800000;
 }
 
 .red:active {
-  background-color: #800000;
+  height: 42px;
   border-bottom: none;
+  background-color: #800000;
+
 }

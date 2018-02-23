@@ -26,39 +26,39 @@
       </div>
       <div class="calc">
         <form name="calculator">
-            <input  type="text" value="0" class="display "name="display" id="display" disabled>
+            <input  type="text" placeholder="0" class="display "name="display" id="display" disabled>
           <hr>
             <!-- first button row -->
-            <input type="button" value="AC" class="btn red" id="deleteAll" onclick=”toDisplay('AC')”>
-            <input type="button" value="CE" class="btn red" id="deleteOne" onclick=”deleteOne('CE')”>
-            <input type="button" value="x^2" class="btn" id="/" onclick=”power('p')”>
-            <input type="button" value="/" class="btn" id="/" onclick=”toDisplay('/')”>
+            <input type="button" value="AC" class="btn red" id="deleteAll" onclick="toDisplay('AC')">
+            <input type="button" value="CE" class="btn red" id="delete" onclick="remove()">
+            <input type="button" value="x^2" class="btn" id="/" onclick="power()">
+            <input type="button" value="/" class="btn" id="/" onclick="toDisplay('/')">
 
 
             <!-- second button row -->
-            <input type="button" value="7" class="btn" id="7" onclick=”toDisplay('7')”>
-            <input type="button" value="8" class="btn" id="8" onclick=”toDisplay('8')”>
-            <input type="button" value="9" class="btn" id="9" onclick=”toDisplay('9')”>
-            <input type="button" value="x" class="btn" id="x" onclick=”toDisplay('x')”>
+            <input type="button" value="7" class="btn" id="7" onclick="toDisplay('7')">
+            <input type="button" value="8" class="btn" id="8" onclick="toDisplay('8')">
+            <input type="button" value="9" class="btn" id="9" onclick="toDisplay('9')">
+            <input type="button" value="x" class="btn" id="x" onclick="toDisplay('*')">
 
 
             <!-- third button row -->
-            <input type="button" value="4" class="btn" id="4" onclick=”toDisplay('4')”>
-            <input type="button" value="5" class="btn" id="5" onclick=”toDisplay('5')”>
-            <input type="button" value="6" class="btn" id="6" onclick=”toDisplay('6')”>
-            <input type="button" value="-" class="btn" id="-" onclick=”toDisplay('-')”>
+            <input type="button" value="4" class="btn" id="4" onclick="toDisplay('4')">
+            <input type="button" value="5" class="btn" id="5" onclick="toDisplay('5')">
+            <input type="button" value="6" class="btn" id="6" onclick="toDisplay('6')">
+            <input type="button" value="-" class="btn" id="-" onclick="toDisplay('-')">
 
 
             <!-- fourth button row -->
-            <input type="button" value="3" class="btn" id="3" onclick=”toDisplay('3')”>
-            <input type="button" value="2" class="btn" id="2" onclick=”toDisplay('2')”>
-            <input type="button" value="1" class="btn" id="1" onclick=”toDisplay('1')”>
-            <input type="button" value="+" class="btn" id="+" onclick=”toDisplay('+')”>
+            <input type="button" value="3" class="btn" id="3" onclick="toDisplay('3')">
+            <input type="button" value="2" class="btn" id="2" onclick="toDisplay('2')">
+            <input type="button" value="1" class="btn" id="1" onclick="toDisplay('1')">
+            <input type="button" value="+" class="btn" id="+" onclick="toDisplay('+')">
 
             <!-- fifth button row -->
-            <input type="button" value="0" class="btn" id="0" onclick=”toDisplay('0')”>
-            <input type="button" value="." class="btn" id="." onclick=”toDisplay('.')”>
-            <input type="button" value="=" class="btn long red" id="=" onclick=”toDisplay('=')”>
+            <input type="button" value="0" class="btn" id="0" onclick="toDisplay('0')">
+            <input type="button" value="." class="btn" id="." onclick="toDisplay('.')">
+            <input type="button" value="=" class="btn long red" id="=" onclick="answer()">
           </div>
         </form>
 

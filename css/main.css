@@ -117,6 +117,11 @@ h3 {
   width: 85%;
 }
 
+::placeholder {
+  color: #333333;
+  opacity: 1;
+}
+
 hr {
   margin: 6% auto 4% auto;
 
@@ -183,11 +188,14 @@ input:visited {
   background-color: yellow;
 }
 
-.long {
-  width: 42%
+.long,
+.long:active,
+.long:focus-within {
+  width: 42% !important;
 }
 
-.red {
+.red,
+.red:focus-within {
   background-color: #ff3333;
   border-bottom: 4px solid #b30000;
   color: white;
@@ -196,12 +204,13 @@ input:visited {
 .red:hover {
   height: 38px;
   background-color: #b30000;
-  border-bottom: 2px solid #800000;
+  border-bottom: 2px solid #670000;
+  transform: translateY(2px);
 }
 
 .red:active {
-  height: 42px;
-  border-bottom: none;
+  height: 36px;
+  border-top: none;
+  border-bottom: 4px solid #800000;
   background-color: #800000;
-
 }

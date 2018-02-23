@@ -127,7 +127,8 @@ input.btn {
   vertical-align: central;
 }
 
-.btn {
+.btn,
+.btn:focus-within {
   background-color: #cccccc;
   border-radius: 10px;
   border-bottom: 4px solid #808080;
